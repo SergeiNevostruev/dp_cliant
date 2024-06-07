@@ -40,6 +40,15 @@ module.exports = {
         alphabetize: { order: 'asc', caseInsensitive: true },
       },
     ],
+    semi: ['error', 'always', { omitLastInOneLineBlock: true }],
+    quotes: ['error', 'single'],
+    'no-cond-assign': ['error', 'always'],
+    'object-curly-spacing': ['error', 'always'],
+    // 'array-bracket-spacing': ['error', 'always'],
+    'keyword-spacing': ['error', { before: true, after: true }],
+    'no-multiple-empty-lines': ['error', { max: 1 }],
+    'key-spacing': ['error', { mode: 'strict' }],
+    indent: ['error', 4],
     'import/default': 'off',
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',
@@ -51,16 +60,16 @@ module.exports = {
     '@typescript-eslint/no-empty-function': ['off'],
     '@typescript-eslint/no-explicit-any': ['off'],
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
-    'check-file/filename-naming-convention': [
-      // Нужно описать конвенции имен https://www.npmjs.com/package/eslint-plugin-check-file
-      'error',
-      {
-        '**/*.{ts,tsx}': 'PASCAL_CASE',
-      },
-      {
-        ignoreMiddleExtensions: true,
-      },
-    ],
+    // 'check-file/filename-naming-convention': [
+    //   // Нужно описать конвенции имен https://www.npmjs.com/package/eslint-plugin-check-file
+    //   'error',
+    //   {
+    //     '**/*.{ts,tsx}': 'PASCAL_CASE',
+    //   },
+    //   {
+    //     ignoreMiddleExtensions: true,
+    //   },
+    // ],
   },
   settings: {
     'import/ignore': ['*.css'], // игнорирование неправильного импорта для css если используются модули, то отключить
