@@ -48,7 +48,7 @@ module.exports = {
     'keyword-spacing': ['error', { before: true, after: true }],
     'no-multiple-empty-lines': ['error', { max: 1 }],
     'key-spacing': ['error', { mode: 'strict' }],
-    indent: ['error', 4],
+    // indent: ['error', 4],
     'import/default': 'off',
     'import/no-named-as-default-member': 'off',
     'import/no-named-as-default': 'off',

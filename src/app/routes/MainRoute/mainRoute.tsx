@@ -1,4 +1,5 @@
 import { RouteObject, useLocation } from "react-router-dom";
+import FlowDraw from "../../../lib/reactflow";
 import { menuRouteKey } from "./menuRouteKey";
 
 const PathComponent = () => {
@@ -14,7 +15,7 @@ const PathComponent = () => {
 const mainRoute: RouteObject[] = [
     {
         path: menuRouteKey[0],
-        element: <PathComponent/>
+        element: <FlowDraw/>
     },
     {
         path: menuRouteKey[1],
