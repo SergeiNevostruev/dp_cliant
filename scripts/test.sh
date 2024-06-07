@@ -1,0 +1,1 @@
+cd src && mkdir "./components" && cd "./components" && mkdir errors layouts seo ui
